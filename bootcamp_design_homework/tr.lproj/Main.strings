@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "#PlayerTag"; ObjectID = "HhA-cZ-w0p"; */
+"HhA-cZ-w0p.placeholder" = "#OyuncuTag";
+
+/* Class = "UILabel"; text = "Profile Search Engine"; ObjectID = "Wvb-y7-NsW"; */
+"Wvb-y7-NsW.text" = "Profil Arama Motoru";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YLu-j0-ZXN"; */
+"YLu-j0-ZXN.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Clash of Clans"; ObjectID = "abI-NY-xQB"; */
+"abI-NY-xQB.text" = "Clash of Clans";
