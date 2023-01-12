@@ -30,30 +30,50 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tuW-TC-aBo">
-                                <rect key="frame" x="48" y="386" width="318" height="124"/>
+                                <rect key="frame" x="47.5" y="354" width="319" height="188"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xeZ-QA-RxK">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clash of Clans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abI-NY-xQB">
-                                                <rect key="frame" x="0.0" y="0.0" width="318" height="38.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="319" height="38.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                                 <color key="textColor" name="titleColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Search Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-y7-NsW">
-                                                <rect key="frame" x="0.0" y="38.5" width="318" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="38.5" width="319" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="319" id="qEA-IA-Hmd"/>
+                                        </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLu-j0-ZXN">
+                                        <rect key="frame" x="0.0" y="75" width="319" height="49"/>
+                                        <color key="backgroundColor" name="mainOrange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="DQy-EL-twZ"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius2">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#PlayerTag" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhA-cZ-w0p">
-                                        <rect key="frame" x="0.0" y="75" width="318" height="49"/>
+                                        <rect key="frame" x="0.0" y="139" width="319" height="49"/>
                                         <color key="backgroundColor" name="customGrey"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="318" id="Kf8-ub-Mkx"/>
                                             <constraint firstAttribute="height" constant="49" id="icZ-OK-sJo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -78,6 +98,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchButton" destination="YLu-j0-ZXN" id="NnS-Wc-5wK"/>
                         <outlet property="searchTextField" destination="HhA-cZ-w0p" id="683-EJ-BTo"/>
                     </connections>
                 </viewController>
@@ -94,6 +115,9 @@
         </namedColor>
         <namedColor name="customGrey">
             <color red="0.94117647058823528" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainOrange">
+            <color red="1" green="0.72156862745098038" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="titleColor">
             <color red="0.51372549019607838" green="0.32156862745098036" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

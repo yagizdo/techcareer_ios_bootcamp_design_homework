@@ -11,9 +11,14 @@ class SearchPage : UIViewController {
 
     @IBOutlet weak var searchTextField: UITextField!
     
+    @IBOutlet weak var searchButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchTextField.setLeftPaddingPoints(15.0)
-    }
+        searchTextField.rightView = searchButton
+        searchTextField.rightViewMode = .always
+
+            }
 }
 
