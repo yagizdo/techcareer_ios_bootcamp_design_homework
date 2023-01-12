@@ -2,6 +2,7 @@
 
 Tech Career Bootcamp Homework 3 
 
+- Added Turkish and English language support
 ## Screenshots
 
 ### Search Screen
