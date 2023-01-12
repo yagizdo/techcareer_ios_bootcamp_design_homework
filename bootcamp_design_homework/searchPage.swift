@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchPage : UIViewController {
 
+    @IBOutlet weak var searchTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        searchTextField.setLeftPaddingPoints(15.0)
     }
-
-
 }
 
